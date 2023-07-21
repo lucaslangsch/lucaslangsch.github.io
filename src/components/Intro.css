@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody:wght@300;400;500;700&family=Staatliches&display=swap');
+
+.about {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 80vh;
+  width: 100%;
+  justify-content: left;
+  background-image: url('../assets/layered-waves-haikei.png');
+  background-size: cover;
+  background-position: 60% 50%;
+  margin: 0 auto;
+  text-align: right;
+}
+
+.about h1 {
+  font-family: 'Staatliches', cursive;
+  font-size: 8em;
+  line-height: 1;
+  margin-bottom: 0;
+}
+
+.about h3 {
+  line-height: 1;
+  margin-bottom: 0;
+  color: white;
+}
+
+.about__content {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.about__image {
+  width: 50%;
+  align-self: center;
+  min-width: 400px;
+}
+
+.about__image img {
+  width: 100%;
+  height: auto;
+  clip-path: circle(40% at 50% 50%);
+  margin: 0 auto;
+}
