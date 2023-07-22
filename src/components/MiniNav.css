@@ -1,17 +1,17 @@
-.about__nav ul {
+.intro__nav ul {
   padding: 0;
 }
 
-.about__nav a {
+.intro__nav a {
   font-size: var(--global-font-large-medium);
   padding: 25px;
   color: white;
 }
 
-.about__nav-icon:visited {
+.intro__nav-icon:visited {
   color: white;
 }
 
-.about__nav-icon:hover {
+.intro__nav-icon:hover {
   transform: scale(1.5);
 }

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Anybody:wght@300;400;500;700&family=Staatliches&display=swap');
 
-.about {
+.intro {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -14,32 +14,32 @@
   text-align: right;
 }
 
-.about h1 {
+.intro h1 {
   font-family: 'Staatliches', cursive;
   font-size: 8em;
   line-height: 1;
   margin-bottom: 0;
 }
 
-.about h3 {
+.intro h3 {
   line-height: 1;
   margin-bottom: 0;
   color: white;
 }
 
-.about__content {
+.intro__content {
   display: flex;
   flex-direction: column;
   width: 50%;
 }
 
-.about__image {
+.intro__image {
   width: 50%;
   align-self: center;
   min-width: 400px;
 }
 
-.about__image img {
+.intro__image img {
   width: 100%;
   height: auto;
   clip-path: circle(40% at 50% 50%);

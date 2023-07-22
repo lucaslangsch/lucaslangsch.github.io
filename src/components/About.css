@@ -1,0 +1,21 @@
+.about {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 100px auto 0 auto;
+}
+
+.about__image {
+  width: 50%;
+  margin-top: -100px;
+}
+
+.about__content {
+  width: 50%;
+  text-align: left;
+}
+
+.about__content-name{
+  color: white;
+}
