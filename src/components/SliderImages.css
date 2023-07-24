@@ -1,0 +1,22 @@
+.slider__image {
+  width: 80%;
+  opacity: 0.5;
+}
+
+.slider__div img:hover {
+  opacity: 1;
+}
+
+.slider__div {
+  display: flex;
+  /* align-items: center; */
+  max-width: 200px;
+}
+
+.slider {
+  width: calc(50% - 70px);
+  margin: 0 35px 0 35px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 125px;
+}

@@ -1,0 +1,16 @@
+.tecnologies {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.tecnologies__body {
+  display: flex;
+  flex-direction: row;
+}
+
+.tecnologies__content{
+  width: 50%;
+  text-align: right;
+}

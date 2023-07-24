@@ -1,6 +1,8 @@
 import './App.css';
 import About from './components/About';
 import Intro from './components/Intro';
+import SliderImages from './components/SliderImages';
+import Tecnologies from './components/Tecnologias';
 
 function App() {
 
@@ -10,7 +12,7 @@ function App() {
       <main>
         <Intro />
         <About />
-        <h1>MINHAS HABILIDADES</h1>
+        <Tecnologies />
       </main>
     </>
   );
