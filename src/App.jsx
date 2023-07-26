@@ -1,7 +1,7 @@
 import './App.css';
 import About from './components/About';
 import Intro from './components/Intro';
-import SliderImages from './components/SliderImages';
+import Projects from './components/Projects';
 import Tecnologies from './components/Tecnologias';
 
 function App() {
@@ -13,6 +13,7 @@ function App() {
         <Intro />
         <About />
         <Tecnologies />
+        <Projects />
       </main>
     </>
   );

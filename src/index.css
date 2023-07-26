@@ -4,6 +4,7 @@
   font-family: 'Anybody', cursive;
   line-height: 1.5;
   font-weight: 400;
+  box-sizing: border-box;
 
   background-color: #242424;
   color: #007c5b;

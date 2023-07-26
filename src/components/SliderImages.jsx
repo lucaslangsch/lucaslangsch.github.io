@@ -54,8 +54,8 @@ export default class SliderImages extends Component {
       <div className="slider">
         <Slider {...settings}>
           {images.map((image) => (
-            <div key={image} className="slider__div">
-              <img src={image} alt={`logotipo de ${image}`}  className="slider__image"/>
+            <div key={image} className="slider__div" >
+              <img src={image} alt={`logotipo de ${image}`}  className="slider__image" />
             </div>
         ))}
         </Slider>

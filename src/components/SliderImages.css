@@ -7,11 +7,6 @@
   opacity: 1;
 }
 
-.slider__div {
-  display: flex;
-  /* align-items: center; */
-  max-width: 200px;
-}
 
 .slider {
   width: calc(50% - 70px);
