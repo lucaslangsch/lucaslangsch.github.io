@@ -24,3 +24,9 @@
   gap: 100px 50px;
   flex-wrap: wrap;
 } */
+
+@media screen and (max-width:1024px) {
+  .projects__body {
+    justify-content: center
+  }
+}
