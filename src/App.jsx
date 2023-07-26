@@ -1,8 +1,7 @@
+import { Route, Switch } from 'react-router-dom';
+import Home from './pages/Home';
+import Project from './pages/Project';
 import './App.css';
-import About from './components/About';
-import Intro from './components/Intro';
-import Projects from './components/Projects';
-import Tecnologies from './components/Tecnologias';
 
 function App() {
 
@@ -10,10 +9,10 @@ function App() {
     <>
       <header>MENU</header>
       <main>
-        <Intro />
-        <About />
-        <Tecnologies />
-        <Projects />
+        <Switch>
+          <Route exact path="/" render={ () => (<Home />) }/>
+          <Route path="/project/:id" render={ () => (<Project />) }/>
+        </Switch>
       </main>
     </>
   );

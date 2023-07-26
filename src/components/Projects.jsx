@@ -18,7 +18,7 @@ function Projects() {
     <section className='projects'>
       <h1>MEUS PROJETOS</h1>
       <div className='projects__body'>
-        {repos.map((repo) => <CardProject key={repo.name} props={repo}/>)}
+        {repos.map((repo) => <CardProject key={repo.id} props={repo}/>)}
       </div>
     </section>
   );
