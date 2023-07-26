@@ -38,7 +38,8 @@ function Projects() {
   };
 
   return (
-    <section >
+    <section className='projects'>
+      <h1>MEUS PROJETOS</h1>
       <div className='projects__body'>
         {repos.map((repo) => <CardProject key={repo.name} props={repo}/>)}
       </div>

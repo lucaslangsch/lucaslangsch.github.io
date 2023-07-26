@@ -1,15 +1,26 @@
 .projects{
   width: 100%;
-  margin: 0 auto;
+  margin: 50px auto;
   display: flex;
+  flex-direction: column;
 }
 
 .projects__body {
   width: 80%;
-  margin: 0 auto;
+  margin: 25px auto;
   display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 100px 50px;
+  flex-wrap: wrap;
+}
+
+/* .projects__body {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   gap: 100px 50px;
   flex-wrap: wrap;
-}
+} */

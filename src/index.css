@@ -26,6 +26,10 @@ h1 {
   font-size: var(--global-font-large-large);
 }
 
+h2 {
+  font-size: var(--global-font-large-medium);
+}
+
 h3 {
   font-size: var(--global-font-large-small);
 }

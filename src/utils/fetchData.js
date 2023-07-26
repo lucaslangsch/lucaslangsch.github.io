@@ -1,5 +1,5 @@
 const URL = 'https://api.github.com/users/lucaslangsch/repos';
-const token = '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';
+const token = import.meta.env.VITE_TOKEN_GITHUB;
 
 const fetchData = async () => {
   try {

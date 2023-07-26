@@ -8,8 +8,8 @@ function CardProject({props}) {
         <img src={imagesData[props.name]} alt="" />
       </div>
       <div className='projects__card-content'>
-        <h3>{props.name.replace('-', ' ')}</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, animi. Fugiat est odio rerum culpa quam atque mollitia vero. Magni maiores placeat iusto, aperiam minus voluptas quas doloribus qui id.</p>
+        <h2>{props.name.replace('-', ' ')}</h2>
+        <a href=''>SAIBA MAIS</a>
       </div>
     </div>
   );
