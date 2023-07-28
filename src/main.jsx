@@ -4,14 +4,14 @@ import RepoProvider from './context/RepoProvider.jsx';
 import RepoDetailsProvider from './context/RepoDetailsProvider.jsx';
 import App from './App.jsx';
 import './index.css';
-import { HashRouter } from 'react-router-dom/cjs/react-router-dom.min.js';
+import { BrowserRouter, HashRouter } from 'react-router-dom/cjs/react-router-dom.min.js';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <HashRouter>
+  <BrowserRouter>
     <RepoProvider>
       <RepoDetailsProvider>
         <App />
       </RepoDetailsProvider>
     </RepoProvider>
-  </HashRouter>
+  </BrowserRouter>
 )

@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  height: 80vh;
+  height: fit-content;
   width: 100%;
   justify-content: left;
   background-image: url('../assets/layered-waves-haikei.png');
@@ -30,13 +30,16 @@
 .intro__content {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  min-width: 50%;
+  max-width: 90%;
+  flex-grow: 1;
 }
 
 .intro__image {
   width: 50%;
   align-self: center;
   min-width: 400px;
+  flex-grow: 1;
 }
 
 .intro__image img {
@@ -44,4 +47,17 @@
   height: auto;
   clip-path: circle(40% at 50% 50%);
   margin: 0 auto;
+}
+
+@media screen and (max-width:800px) {
+  .intro__image img {
+    max-width: 400px;
+    margin-right: -50px;
+
+  }
+
+  .intro__image {
+    text-align: right;
+    max-width: 90%;
+  }
 }

@@ -19,3 +19,23 @@
 .about__content-name{
   color: white;
 }
+
+@media screen and (max-width:1024px) {
+  .about {
+    flex-direction: column;
+  }
+
+  .about__image {
+    margin-top: -150px;
+    width: 100%;
+  }
+
+  .image {
+    max-width: 400px;
+  }
+
+  .about__content {
+    width: 100%;
+    text-align: left;
+  }
+}

@@ -48,6 +48,31 @@ export default class SliderImages extends Component {
         cssEase: "linear",
         pauseOnHover: false,
         arrows: false,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              vertical: true,
+              slidesToShow: 1,
+              swipeToSlide: true,
+              pauseOnHover: true,
+              swipe: true,
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              vertical: false,
+              slidesToShow: 3,
+              arrows: true,
+              swipeToSlide: true,
+              speed: 1000,
+              autoplaySpeed: 0.8,
+              pauseOnHover: true,
+              swipe: true,
+            }
+          },
+        ]
       };
 
     return (
