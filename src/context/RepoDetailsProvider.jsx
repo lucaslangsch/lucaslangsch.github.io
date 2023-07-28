@@ -9,7 +9,7 @@ function RepoDetailsProvider({ children }) {
 
   const getRepoDetails = useCallback((id) => {
     const repo = getRepoDetailsFromLocal(id);
-    setRepoDetails(repo);
+    return setRepoDetails(repo);
   }, [getRepoDetailsFromLocal]);
   
   const values = useMemo(() => ({

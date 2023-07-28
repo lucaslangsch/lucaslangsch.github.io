@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { createContext } from "react";
 import fetchData from "../utils/fetchData";
 import { getLocalStorage, saveLocalStorage } from "../utils/localStorageFunctions";
@@ -7,7 +7,8 @@ export const RepoContext = createContext();
 
 function RepoProvider({ children }) {
   const [reposGit, setReposGit] = useState(null);
-  const [reposTitle, _setReposTitle] = useState(['trivia', 'recipes-app', 'newpace']);
+  const [reposTitle, _setReposTitle] = useState(['trivia', 'recipes-app', 'newpace', 'pokedex-personal']);
+  const ref = useRef();
 
   useEffect(() => {
     const callFetchData = async () => {
@@ -31,8 +32,8 @@ function RepoProvider({ children }) {
   const repos = JSON.parse(getLocalStorage('reposDataToRender'));
 
   const values = useMemo(() => ({
-    repos
-  }), [repos])
+    repos, ref
+  }), [repos, ref])
 
   return (
     <RepoContext.Provider value={values}>
