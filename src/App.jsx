@@ -7,13 +7,10 @@ function App() {
 
   return (
     <>
-      <header>MENU</header>
-      <main>
-        <Switch>
-          <Route exact path="/" render={ () => (<Home />) }/>
-          <Route path="/project/:id" render={ () => (<Project />) }/>
-        </Switch>
-      </main>
+      <Switch>
+        <Route exact path="/" render={ () => (<Home />) }/>
+        <Route path="/project/:id" render={ () => (<Project />) }/>
+      </Switch>
     </>
   );
 };

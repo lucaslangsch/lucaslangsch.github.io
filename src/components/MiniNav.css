@@ -15,3 +15,9 @@
 .intro__nav-icon:hover {
   transform: scale(1.5);
 }
+
+@media screen and (max-width:500px) {
+  .intro__nav a:last-child {
+    padding-right: 0px;
+  }
+}

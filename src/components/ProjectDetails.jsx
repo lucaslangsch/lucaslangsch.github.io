@@ -16,8 +16,13 @@ function ProjectDetails() {
   return (
     <>
       <section className="projectdetails">
-        <a className='projectdetails-link link-1' href={repoDetails.html_url} target='blank'><AiOutlineGithub /></a>
-        <a className='projectdetails-link link-2' href={repoDetails.homepage} target='blank'><AiOutlineLink /></a>
+        <a className='projectdetails-link link-1' href={repoDetails.html_url} target='_blank'><AiOutlineGithub /></a>
+        {
+          repoDetails.homepage ? 
+            <a className='projectdetails-link link-2' href={repoDetails.homepage} target='_blank'><AiOutlineLink /></a>
+            :
+            null
+        }
         <button onClick={ () => {window.location.href = '/#projects'}} className='projectdetails-link link-3'><IoChevronBackCircleOutline /></button>
         {/* <Link to='/' className='projectdetails-link link-3' href={repoDetails.homepage} target='blank'><IoChevronBackCircleOutline /></Link> */}
         <div className='projectdetails__img'>

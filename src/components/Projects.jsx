@@ -10,7 +10,6 @@ function Projects() {
 
   useEffect(() => {
     if (history.location.hash === '#projects' && ref && ref.current) {
-      console.log(ref.current);
       ref.current.scrollIntoView();
     }
   }, [location, ref]);

@@ -61,3 +61,28 @@
     max-width: 90%;
   }
 }
+
+@media screen and (max-width:500px) {
+  .intro__image {
+    text-align: center;
+    max-width: 100%;
+    min-width: 100%;
+  }
+  .intro__image img {
+    max-width: 320px;
+    margin-right: 0;
+  }
+
+  .intro__content {
+    display: flex;
+    flex-direction: column;
+    min-width: 50%;
+    max-width: 90%;
+    text-align: right;
+  }
+
+  .intro h1 {
+    font-family: 'Staatliches', cursive;
+    font-size: 6em;
+  }
+}

@@ -39,3 +39,11 @@
     text-align: left;
   }
 }
+
+@media screen and (max-width:500px) {
+  .about__image {
+    margin-top: -100px;
+    width: 100%;
+    text-align: left;
+  }
+}
