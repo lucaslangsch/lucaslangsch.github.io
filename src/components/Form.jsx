@@ -52,10 +52,9 @@ function Form() {
     <footer id='contact' className="contact">
       <div className="form__asside">
         <h1>FICOU INTERESSADO?</h1>
-        <h3>Entre em contato e tire suas dúvidas ou faça um orçamento</h3>
+        <h3>Entre em contato<br />e tire suas dúvidas ou faça um orçamento</h3>
       </div>
       <div className="form__body">
-        <h1>CONTATO</h1>
         <form className="form" method="post" onSubmit={ (e) => submitForm(e) }>
           <input
             type="text"
