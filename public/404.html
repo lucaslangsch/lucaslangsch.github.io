@@ -4,16 +4,15 @@
     <meta charset="utf-8">
     <title>Lucas Langsch Portfolio</title>
     <script type="text/javascript">
-      var pathSegmentsToKeep = 0;
+      (function() {
+        var pathSegmentsToKeep = 1; // Defina o número de segmentos de rota a serem mantidos (neste exemplo, estamos mantendo um segmento além do nome de domínio)
 
-      var l = window.location;
-      l.replace(
-        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-        l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
-        l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
-        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
-        l.hash
-      );
+        var l = window.location;
+        var segments = l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep);
+        var newUrl = l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') + segments.join('/') + (l.search ? l.search : '') + l.hash;
+
+        window.history.replaceState({}, '', newUrl);
+      })();
     </script>
   </head>
   <body>
