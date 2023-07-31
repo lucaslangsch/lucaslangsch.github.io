@@ -8,7 +8,7 @@ function MiniNav() {
         <a target="_blank" href="https://www.linkedin.com/in/lucas-langsch-910250189/">
           <AiFillLinkedin className='intro__nav-icon' />
         </a>
-        <a href="#">
+        <a href="#contact">
           <AiOutlineMail className='intro__nav-icon' />
         </a>
         <a target="_blank" href="https://github.com/lucaslangsch">

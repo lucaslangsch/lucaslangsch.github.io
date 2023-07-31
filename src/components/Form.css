@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Anybody:wght@300;400;500;700&family=Staatliches&display=swap');
+
+.contact {
+  width: 100%;
+  margin: 0 auto;
+  background-image: url('../assets/stacked-waves-haikei.png');
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.form__asside {
+  max-width: 800px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.form__body {
+  padding-bottom: 50px;
+  min-width: 384px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+}
+
+.form input, .form textarea{
+  padding: 12px 24px;
+  line-height: 1.5rem;
+  border-radius: 12px;
+  border: none;
+  font-size: 20px;
+  max-width: 768px;
+  width: calc(100% - 48px);
+}
+
+.form button{
+  padding: 12px 24px;
+  line-height: 1.5rem;
+  border-radius: 12px;
+  border: none;
+  font-size: 20px;
+  background-color: #437E5C;
+  cursor: pointer;
+  font-family: 'Anybody', cursive;
+  color: white;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .contact {
+    gap: 25px;
+  }
+
+  .form__body {
+    width: 100%;
+    min-width: 300px;
+  }
+
+  .form__asside {
+    width: 80%;
+    margin: 0 auto;
+  }
+}

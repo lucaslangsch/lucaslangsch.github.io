@@ -16,14 +16,14 @@ function Projects() {
 
   if (!repos) {
     return (
-      <section className='projects'>
+      <section id='projects' className='projects'>
         <h1>OOPS! Algo errado ao trazer os projetos, por favor tente mais tarde ou visite o github :|</h1>
       </section>
     );
   };
 
   return (
-    <section className='projects' id='proj'>
+    <section className='projects' id='projects'>
       <h1 ref={ref}>MEUS PROJETOS</h1>
       <div className='projects__body'>
         {repos.map((repo) => <CardProject key={repo.id} props={repo} />)}

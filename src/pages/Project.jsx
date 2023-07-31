@@ -1,8 +1,8 @@
 import { useParams } from "react-router-dom/cjs/react-router-dom.min";
 import { RepoDetailsContext } from "../context/RepoDetailsProvider";
 import { useContext, useEffect } from "react";
-import Intro from "../components/Intro";
 import ProjectDetails from "../components/ProjectDetails";
+import Form from "../components/Form";
 
 function Project() {
   const { id } = useParams();
@@ -15,6 +15,7 @@ function Project() {
   return (
     <>
       <ProjectDetails />
+      <Form />
     </>
   );
 }
