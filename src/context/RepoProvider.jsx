@@ -7,7 +7,7 @@ export const RepoContext = createContext();
 
 function RepoProvider({ children }) {
   const [reposGit, setReposGit] = useState(null);
-  const [reposTitle, _setReposTitle] = useState(['trivia', 'recipes-app', 'newpace', 'blogs-api', 'store-manager']);
+  const [reposTitle, _setReposTitle] = useState(['trivia', 'recipes-app', 'newpace', 'blogs-api', 'store-manager', 'wallet']);
   const ref = useRef();
 
   useEffect(() => {
