@@ -8,6 +8,7 @@ const images = {
   newpace,
   'recipes-app': recipes,
   'blogs-api': blog,
+  'store-manager': blog,
 }
 
 export default images;
